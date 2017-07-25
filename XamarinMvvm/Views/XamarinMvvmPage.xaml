@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamarinMvvm" x:Class="XamarinMvvm.XamarinMvvmPage">
+	<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="10" VerticalOptions="CenterAndExpand">
+         <Entry Text="{Binding EmployeeObject.EmployeeId}" Placeholder="Employee Id"/>
+        <Entry Text="{Binding EmployeeObject.EmployeeName}" Placeholder="Employee Name"/>
+        <Entry Text="{Binding EmployeeObject.EmployeeAddress}" Placeholder="Employee Address"/>
+        <Button HorizontalOptions="Center" Text="Save" Command="{Binding SaveCommand}"/>
+    </StackLayout>
+</ContentPage>
